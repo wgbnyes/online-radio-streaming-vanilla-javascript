@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rádio Online</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#121212">
+    <link rel="icon" type="image/png" href="/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  </head>
+  <body>
+    <div id="app">
+      <div class="player-container">
+        <h1>Rádio Online</h1>
+        <div class="now-playing">
+          <p id="current-station">Selecione uma rádio</p>
+        </div>
+        <div class="controls">
+          <button id="playPause" class="control-button">
+            <span id="playIcon">▶️</span>
+          </button>
+          <div class="volume-control">
+            <input type="range" id="volume" min="0" max="100" value="50">
+          </div>
+        </div>
+        <div class="stations-container">
+          <h2>Estações</h2>
+          <ul id="stations-list" class="stations-list"></ul>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
